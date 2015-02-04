@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/angular/controllers/example_controller.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA;AAAA"
+}
