@@ -30,3 +30,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Assets for front end development
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular-google-maps'
+  gem 'rails-assets-restangular'
+end
+

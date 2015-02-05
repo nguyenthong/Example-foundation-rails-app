@@ -1,9 +1,10 @@
 ---
 name: home
-url: /
+url: /home
+controller: EventController
 ---
 
 <h1>Home</h1>
-<p ng-controller="ExampleController">
-  {{ hola }}
+<p>
+  {{ event.name }}
 </p>
