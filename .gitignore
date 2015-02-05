@@ -20,4 +20,9 @@ npm-debug.log
 .DS_Store
 #ignore the IDE file
 .idea/
+#public assets and front-end file of foundation build from assets folder
 public/assets/*
+public/images/*
+public/components/*
+public/templates/*
+vendor/assets/javascripts/build/*
