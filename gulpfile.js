@@ -34,6 +34,8 @@ var foundationJS = [
   'vendor/assets/bower_components/tether/tether.js',
   'vendor/assets/bower_components/angular/angular.js',
   'vendor/assets/bower_components/angular-animate/angular-animate.js',
+  'vendor/assets/bower_components/angular-sanitize/angular-sanitize.js',
+  'vendor/assets/bower_components/angular-inflector/dist/angular-inflector.js',
   'vendor/assets/bower_components/ui-router/release/angular-ui-router.js',
   'vendor/assets/bower_components/foundation-apps/js/vendor/**/*.js',
   'vendor/assets/bower_components/foundation-apps/js/angular/**/*.js'
@@ -79,7 +81,7 @@ gulp.task('uglify', function() {
 
 // Copies your app's page templates and generates URLs for them
 gulp.task('copy-templates', ['copy'], function() {
-  return gulp.src('./app/views/templates/**/*.html')
+  return gulp.src('./app/views/templates/**/*.{html,erb}')
     .pipe(dynamicRouting({
       path: 'vendor/assets/javascripts/build/routes.js',
       root: 'app/views'
@@ -102,5 +104,5 @@ gulp.task('default', ['build'], function() {
   //gulp.watch(['!./app/views/templates/**/*.*'], ['copy', 'copy-templates']);
 
   // Watch app templates
-  gulp.watch(['app/views/templates/**/*.html'], ['copy-templates']);
+  gulp.watch(['app/views/templates/**/*.{html,erb}'], ['copy-templates']);
 });
